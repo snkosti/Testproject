@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="routingapp">
+<head>
+    <title>Routing Demo</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/routing.js"></script>
+    <script src="Controllers/aboutCtrl.js"></script>
+    <script src="Controllers/homeCtrl.js"></script>
+</head>
+<body>
+    <h2>Sample Routing</h2>
+    <ul>
+        <li><a ui-sref="home"> Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="contact">Contact</a></li>
+    </ul>
+    <section ui-view></section>
+</body>
+</html>
